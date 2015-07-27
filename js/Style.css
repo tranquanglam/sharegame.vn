@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+
+#content{
+width:1040px;
+
+float:left;
+background-color:#09C;
+padding:0px;
+
+}
+#sidebar{
+width:150px;
+float:left;
+
+background-color:#993;
+height:200px;
+}
+
+#content-left{
+width:740px;
+overflow:hidden;
+float:left;
+background-color:#FFC;
+margin-right:10px;
+}
+#content-right{
+width:280px;
+overflow:hidden;
+float:left;
+padding-left:10px;
+background-color:#96C;
+}
