@@ -1,10 +1,11 @@
 body{
     background: #e9eaed;
-    
+    font-family: Verdana, Geneva, sans-serif;
 }
+
 /*
 .main{
-    background: #e9eaed;
+   background: #e9eaed;
     width: 100%;
     float: left;
 }
@@ -23,7 +24,7 @@ body{
 .content-banner{
     width: 100%;
     height: auto;
-    float: left;
+   
     padding-bottom: 0.5em;
 }
 .content-listhotgame{
@@ -36,14 +37,15 @@ body{
     float: left;
 	background:#FF0;
     margin-bottom: 0.5em;
-	
+	padding-left:0.3em;
 	
 }
 .content-newgame-item{
-    width: 30%;
-	height:auto;
-    margin-left: 0.35em;
-	
+	width: 30%;
+	height: auto;
+	margin-left:0.18em;
+	font-size: 24px;
+	font-weight: bold;	
 }
 .sidebar{
     background:#FCC;
@@ -52,6 +54,30 @@ body{
     margin-bottom: 0.1em
 	float:left;
 }
+
+.content-gamecate{
+	width: 100%;
+	margin-bottom: 0.5em;
+	border: thin solid #999;
+	
+    
+}
+.content-gamecate-title{
+	width: auto;
+	height: auto;
+	border-bottom: thin solid #999;
+	padding: 0.3em;
+	margin-bottom: 0.3em;
+	
+	color:cornflowerblue;	
+}
+.content-gamecate-item{
+    width: 30%;         
+    height:auto;
+    /*margin-left: 0.35em;*/
+    padding-left: 0.3em;
+}
+
 
 @media screen and (min-width:600px) {
     .main:before, .main:after {
