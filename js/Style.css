@@ -1,63 +1,81 @@
-@charset "utf-8";
-/* CSS Document */
-/*#body
-{
-	bgcolor="#e9eaed"
-	}*/
-#inside{
-width:1240px;
-height:auto;
-float:left;
+body{
+    background: #e9eaed;
+    
 }
-#content{
-width:1040px;
-height:500px;
-float:left;
-
-padding:0px;
-background-color:#FF6;
-
+/*
+.main{
+    background: #e9eaed;
+    width: 100%;
+    float: left;
 }
-#sidebar{
-width:140px;
-height:1000px;
-float:left;
-background-color:#993;
-height:200px;
+*/
+.content,
+.sidebar{
+    box-sizing: border-box;
+}
+.content{
+   
+    background:#FFF;
+	padding: 0.3em 0.5em;
+	
 }
 
-#content-left{
-width:740px;
-height:1000px;
-overflow:hidden;
-float:left;
-background-color:#096;
-margin-right:10px;
+.content-banner{
+    width: 100%;
+    height: auto;
+    float: left;
+    padding-bottom: 0.5em;
 }
-#content-right{
-width:290px;
-height:1000px;
-overflow:hidden;
-float:left;
-background-color:#0CC;
+.content-listhotgame{
+	background:#FF0;
+    width: 100%;         
+    float: left;
+}
+.content-newgame{
+    width: 100%;
+    float: left;
+	background:#FF0;
+    margin-bottom: 0.5em;
+	
+	
+}
+.content-newgame-item{
+    width: 30%;
+	height:auto;
+    margin-left: 0.35em;
+	
+}
+.sidebar{
+    background:#FCC;
+	padding: 0.3em 1em;
+    width: 100%;
+    margin-bottom: 0.1em
+	float:left;
+}
 
+@media screen and (min-width:600px) {
+    .main:before, .main:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .main {
+        max-width: 100%;
+    }
+    .content{
+        width: 63.5%;
+        float: left;
+        margin-right: 1.5%;
+    }
+    .sidebar{
+        width: 35%;
+        float: left;
+    }
 }
-#menu-title{
-	width: 268px;
-	height: 30px;
-	border: thin solid #999;
-	text-align: left;
-	vertical-align: middle;
-	position: absolute;
-	background-color: #FFF;
-	padding-top: 10px;
-	padding-left: 10px;	
-}
-#menu-items{
-	width: 268px;
-	height: 200px;
-	border: thin solid #999;
-	background-color:#FFF;	
-	padding-top: 10px;
-	padding-left: 10px;	
+
+@media screen and (min-width:900px) {
+    .container{
+        max-width: 1040px;
+        margin: 0 auto;
+    }
 }
