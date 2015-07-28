@@ -35,7 +35,6 @@ body{
 .content-newgame{
     width: 100%;
     float: left;
-	background:#FF0;
     margin-bottom: 0.5em;
 	padding-left:0.3em;
 	
@@ -57,7 +56,7 @@ body{
 
 .content-gamecate{
 	width: 100%;
-	margin-bottom: 0.5em;
+	margin-bottom: 1.5em;
 	border: thin solid #999;
 	
     
