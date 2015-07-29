@@ -15,9 +15,11 @@ body{
     box-sizing: border-box;
 }
 .content{
-   
+    width: 100%;
+    height: auto;
     background:#FFF;
 	padding: 0.3em 0.5em;
+    float: left;
 	
 }
 
@@ -29,8 +31,10 @@ body{
 }
 .content-listhotgame{
 	background:#FF0;
+    
     width: 100%;         
     float: left;
+    margin-bottom: 0.3em;
 }
 .content-newgame{
     width: 100%;
@@ -42,20 +46,33 @@ body{
 .content-newgame-item{
 	width: 30%;
 	height: auto;
-	margin-left:0.18em;
-	font-size: 24px;
-	font-weight: bold;	
+	float: left;
+	
+	margin-bottom: 0.3em;
+    margin-left: 0.4em;
+}
+.content-newgame-item-title{
+	font-size: 14px;
+    color:cornflowerblue;
+    padding-left: 0.3em;
+
+}
+.content-newgame-picture{
+	width: 100%;
+	height: auto;
+
 }
 .sidebar{
     background:#FCC;
 	padding: 0.3em 1em;
     width: 100%;
-    margin-bottom: 0.1em
+    margin-bottom: 0.1em;
 	float:left;
 }
 
 .content-gamecate{
 	width: 100%;
+    float: left;
 	margin-bottom: 1.5em;
 	border: thin solid #999;
 	
@@ -69,14 +86,26 @@ body{
 	margin-bottom: 0.3em;
 	
 	color:cornflowerblue;	
+    background: #ccc;
 }
 .content-gamecate-item{
     width: 30%;         
     height:auto;
+    float: left;
     /*margin-left: 0.35em;*/
     padding-left: 0.3em;
 }
+.content-gamecate-picture{
+	width: 100%;
+	height: auto;
 
+}
+.content-gamecate-item-title{
+	font-size: 14px;
+    color:cornflowerblue;
+    padding-left: 0.3em;
+
+}
 
 @media screen and (min-width:600px) {
     .main:before, .main:after {
