@@ -28,7 +28,9 @@
   display: none;
 }
 #cssmenu {
-  width: auto;
+  width: 100%;
+  left:0px;
+  top:0px;
   position: fixed;
   font-family: 'Open Sans', Helvetica, sans-serif;
   background: #39b1cc;
