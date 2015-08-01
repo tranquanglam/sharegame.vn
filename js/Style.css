@@ -1,6 +1,11 @@
 body{
     background: #e9eaed;
     font-family: Verdana, Geneva, sans-serif;
+   
+}
+
+.container{
+    padding-top: 45px;
 }
 
 /*
@@ -20,7 +25,7 @@ body{
     background:#FFF;
 	padding: 0.3em 0.5em;
     float: left;
-	
+	margin-top: auto;
 }
 
 .content-banner{
