@@ -9,7 +9,7 @@
             	if(currentImage != indexImage ){
                     $(currentImage).css('z-index',2);
                     clearTimeout(myTimer);
-                    $(currentImage).fadeOut(250, function() {
+                    $(currentImage).fadeOut(0, function() {
 					    myTimer = setTimeout("showNext()", 3000);
 					    $(this).css({'display':'none','z-index':1})
 					});

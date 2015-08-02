@@ -8,7 +8,7 @@
     padding-top:10px;
 }
 #wrapper{
-    width:50%;
+    width:100%;
     min-height: 96%;
 	height: auto !important;
 	height: 96%;
@@ -22,16 +22,16 @@
 	float:none;
 }
 #bigPic{
-	width:50%;
-	height:300px;
+	width:100%;
+	height:auto;
 	padding:1px;
 	border:1px solid #CCC;
 	background-color:#FFF;
 	margin-bottom:10px;
 }
 #bigPic img{
-	width:50%;
-	position:absolute;
+	width:100%;
+	/*position:absolute;*/
 	display:none;
 }
 ul#thumbs li.active{
