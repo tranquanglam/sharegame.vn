@@ -28,11 +28,12 @@ body{
 	margin-top: auto;
 }
 
-.content-banner{
+.content-banner, .content-banner img{
+	background-color:#000000;
     width: 100%;
     height: auto;
    
-    padding-bottom: 0.5em;
+    /*padding-bottom: 0.5em;*/
 }
 .content-listhotgame{
 	background:#FF0;
