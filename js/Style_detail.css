@@ -9,5 +9,8 @@
 	margin-bottom:5px;
 	border-style:none;
 	border-radius:5px;
-	text-align:right;
+}
+.path-game-text{
+    margin:5px;
+	float:right;
 }
