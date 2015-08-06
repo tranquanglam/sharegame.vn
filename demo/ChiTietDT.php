@@ -143,8 +143,6 @@
        <tr>
        <td width="100%">
     	<?php
-		
-		
 			$query1 = "SELECT MaDT, TenDT, Hinh, Gia, SoLuocXem FROM DienThoai WHERE MaLoaiDT = $maLOAI limit 5";
 			
 			$kq1 = DataProvider::ExecuteQuery($query1);

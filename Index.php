@@ -1,7 +1,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php
+	include("DataProvider.php");
+?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sharegame.vn</title>
     <link href="js/Style.css" rel="stylesheet" type="text/css" />
@@ -15,13 +18,10 @@
     
     <script src="js/Script_menu.js"></script>
 	<script src="js/Script_banner.js"></script>
-    
 </head>
 
 <body>
-     
-    
-    
+ 
     
  <div id='cssmenu'>
  
@@ -74,39 +74,21 @@
                 </div>
 
               <div class="content-newgame">
-                 <div class="content-newgame-item">
-                    <img class="content-newgame-picture" src="Images/HanhDong/5653.jpg" width="190" height="160" />
-                    <div class="content-newgame-item-title">test</div> 
+                 <?php
+					$query = "SELECT * FROM GAMES";
+					$connect = DataProvider::ExecuteQuery($query);
+					while ($result = mysql_fetch_array($connect))
+					{
+					?>	
+                    <div class="content-newgame-item">
+                        <img class="content-newgame-picture" src="<?php echo $result["HinhAnh"];?>" width="190" height="160" />
+                        <!--<div class="content-newgame-item-title"><?php echo $result["TenGame"]?></div> -->
+					
                   </div>
-
-                  <div class="content-newgame-item">
-                    <img class="content-newgame-picture" src="Images/HanhDong/5655.jpg" width="190" height="160" />
-                     <div class="content-newgame-item-title">test</div> 
+					<?php }?>
+                  
                   </div>
-
-                  <div class="content-newgame-item">
-                   <img class="content-newgame-picture" src="Images/HanhDong/5654.jpg" width="190" height="160" />
-                     <div class="content-newgame-item-title">test</div>  
-                  </div>
-
-                  <div class="content-newgame-item">
-                   <img class="content-newgame-picture" src="Images/HanhDong/5654.jpg" width="190" height="160" />
-                     <div class="content-newgame-item-title">test</div> 
-                  </div>  
-
-                  <div class="content-newgame-item">
-                   <img class="content-newgame-picture" src="Images/HanhDong/5654.jpg" width="190" height="160" />
-                     <div class="content-newgame-item-title">test</div> 
-                  </div>
-
-                  <div class="content-newgame-item">
-                   <img class="content-newgame-picture" src="Images/HanhDong/5654.jpg" width="190" height="160" />
-                     <div class="content-newgame-item-title">test</div>  
-                  </div>
-
-
-
-                </div>
+                
                 <div class="content-gamecate">
                     <div class="content-gamecate-title">Thể thao</div>
                     <div class="content-gamecate-item">
@@ -162,7 +144,5 @@
 
         </div>
   </div>
-  <script type="text/javascript" src="http://api.adflex.vn/web.php?refcode=phamtrungdung&banner_type=adwall&text=1&adNumber=5&popup=1"></script>
-  <script type="text/javascript" src="http://api.adflex.vn/web.php?refcode=phamtrungdung&banner_type=small_banner&text=0&fix=1"></script>
 </body>
 </html>
