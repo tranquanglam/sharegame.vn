@@ -82,8 +82,8 @@
 					?>	
                     <div class="content-newgame-item">
                         <img class="content-newgame-picture" src="<?php echo $result["HinhAnh"];?>" width="190" height="160" />
-                        <!--<div class="content-newgame-item-title"><?php echo $result["TenGame"]?></div> -->
-					
+                        <div class="content-newgame-item-title"><?php echo $result["TenGame"]?></div>
+                      
                   </div>
 					<?php }?>
                   
